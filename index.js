@@ -32,7 +32,7 @@ const io = new Server(server, {
   }
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 
 blocksRef.onSnapshot((querySnapshot) => {
